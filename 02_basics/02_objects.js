@@ -26,5 +26,16 @@ const obj3 = {...obj1, ...obj2};   // this is how we can merge two objects using
 console.log(obj3);
 
 console.log(Object.keys(vscodeuser));
+
 console.log(Object.values(vscodeuser));
+
+
+const car =  {
+    name: "bmw",
+    price: "10000000",
+    color : "black "
+}
+
+const {price} = car
+console.log(price);
 
