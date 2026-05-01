@@ -40,3 +40,6 @@ console.log(array); // [1, 2, 3, 4] (original array unchanged)
 
 array.splice(1, 2, 'a', 'b');
 console.log(array); // [1, 'a', 'b', 4] (original array modified)
+
+
+
