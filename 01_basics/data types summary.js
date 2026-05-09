@@ -24,5 +24,5 @@ BigInt
     age: 21,
 
  }
- functions 
- ww
+ 
+ 
