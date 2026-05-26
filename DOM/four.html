@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: black; color: aliceblue;"></body>
+    <ul class="language">
+
+        <li>javascript</li>
+    </ul>
+    <script>
+        function addlanguage(langname){
+            const newlist = document.createElement('li');
+            newlist.innerHTML =`${langname}`
+            document.querySelector('.language').
+            appendChild(newlist)
+        }
+        addlanguage("python")
+                addlanguage("Rust")
+
+           function addOptilanguage(langname) {
+             const li = document.createElement('li')
+                 li.appendChild(document.createTextNode(langname))
+                     document.querySelector('.language').appendChild(li)
+
+                     }
+                     addOptilanguage('C++')
+                     addOptilanguage('Python')
+
+
+                     //Edit
+            const SecLang = document.querySelector("li:nth-child(2)")
+               const newLi = document.createElement("li")
+                   newLi.textContent = "Bun"
+                           SecLang.replaceWith(newLi)
+
+                           //Edit
+
+            const FirstLang = document.querySelector("li:first-child")
+            FirstLang.outerHTML = '<li>Typescript </li>'
+
+
+            // remove 
+            const lastlang = document.querySelector('li:last-child')
+            lastlang.remove()
+
+
+
+    </script>
+
+</body>
+</html>
