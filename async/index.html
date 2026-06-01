@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>async</title>
+</head>
+<body>
+    <h1> the vibe coder</h1>
+    <button id="stop">stop</button>
+    <script>
+      const saySahil = function(){
+        console.log("its sahil");
+      }
+     const changeText = function(){
+    document.querySelector("h1").innerHTML = "claude token over "
+     }
+    const chnageme = (changeText,3000)
+    document.querySelector('#stop').addEventListener("click",function(){
+     clearTimeout(chnageme)
+     console.log("stopped");
+     
+    })
+    </script>
+</body>
+</html>

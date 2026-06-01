@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <h1> Sahil chettri</h1>
+
+  <button id="start">start</button>
+  <button id="stop">stop</button>
+
+  <script>
+    const saydate = function(){
+    console.log("sahil",Date.now());
+ 
+  }
+  const intervialId =  setInterval(saydate,1000)
+  clearInterval(intervialId)
+
+  let intervalId = null;
+  document.getElementById("start").addEventListener("click",()=>{
+     if(!intervalId){
+      intervalId= setInterval(()=>{
+        console.log("vibe coder");
+      },1000);
+     }
+  });
+document.getElementById("stop").addEventListener("click",()=>{
+ clearInterval(intervalId);
+ intervalId = null;
+
+})
+
+  </script>
+</head>
+<body>
+  
+</body>
+</html>
